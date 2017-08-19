@@ -3,24 +3,22 @@ import React from 'react';
 export default function Navigation() {
   return (
     <nav className="nav">
-      <div className="container">
-        <span className="logo-wrapper">
-          <img className="logo" src="./static/logo.svg" alt="" />
-        </span>
+      <span className="logo-wrapper">
+        <img className="logo" src="./static/logo.svg" alt="" />
+      </span>
 
-        <ul className="list">
-          <li>
-            <a href="https://medium.com/@jamiehalvorson" target="_blank">
-              Writing
-            </a>
-          </li>
-          <li className="last">
-            <a href="https://github.com/jhalvorson" target="_blank">
-              GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul className="list">
+        <li>
+          <a href="https://medium.com/@jamiehalvorson" target="_blank">
+            Writing
+          </a>
+        </li>
+        <li className="last">
+          <a href="https://github.com/jhalvorson" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
 
       <style jsx>
         {`
@@ -28,10 +26,15 @@ export default function Navigation() {
             display: flex;
             flex-direction: column;
             flex: 1;
-            top: 0;
             position: relative;
-            padding: 0;
-            height: 150px;
+            padding: 20px;
+            height: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+
+          .list {
+            text-align: center;
           }
 
           li {
@@ -73,9 +76,8 @@ export default function Navigation() {
               transform: translateX(-50%);
             }
             .nav {
-              width: 100%;
+              width: auto;
               flex-direction: row;
-              position: fixed;
               height: auto;
             }
 
