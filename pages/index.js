@@ -113,7 +113,7 @@ export default () =>
             >
               The Royal Edinburgh Military Tattoo
             </a>, Sainsbury’s Bank, Scottish Friendly, Scottish Golf, {' '}
-            <a href="https://ardoch-scotland.com">Ardoch Scotland</a>, Borders
+            Ardoch Scotland, Borders
             Biscuits, Actiph Water, People Scotland,{' '}
             <a href="https://patrickgilmour.co.uk/" target="_blank">
               Patrick Gilmour
