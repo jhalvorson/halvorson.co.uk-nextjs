@@ -18,6 +18,7 @@ export default function HomeTitle({ children }) {
             .hero-text {
               font-size: 2.8rem;
               margin-bottom: 50px;
+              padding-top: 90px;
             }
           }
 

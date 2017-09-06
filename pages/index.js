@@ -2,8 +2,9 @@ import Head from 'next/head';
 import HomeTitle from '../components/home-title';
 import Text from '../components/text';
 import Navigation from '../components/navigation';
+import Projects from '../components/projects';
 
-export default () =>
+export default () => (
   <div>
     <Head>
       <title>Jamie Halvorson</title>
@@ -95,8 +96,7 @@ export default () =>
         <div className="container--narrow">
           <HomeTitle>
             Frontend Developer at Signal, focused on React, React Native &amp;
-            JS. Currently building &amp; Head of Product at FabFit. WP-API
-            lover.
+            JS. Currently building &amp; Head of Product at FabFit.
           </HomeTitle>
           <Text>
             20-something FrontEnd Developer based in Edinburgh Scotland, working
@@ -112,9 +112,8 @@ export default () =>
               target="_blank"
             >
               The Royal Edinburgh Military Tattoo
-            </a>, Sainsbury’s Bank, Scottish Friendly, Scottish Golf, {' '}
-            Ardoch Scotland, Borders
-            Biscuits, Actiph Water, People Scotland,{' '}
+            </a>, Sainsbury’s Bank, Scottish Friendly, Scottish Golf, Ardoch
+            Scotland, Borders Biscuits, Actiph Water, People Scotland,{' '}
             <a href="https://patrickgilmour.co.uk/" target="_blank">
               Patrick Gilmour
             </a>, amongst others.
@@ -124,6 +123,11 @@ export default () =>
             other React, React Native and NodeJS applications. Loves
             experimenting with the WP-API.
           </Text>
+        </div>
+      </section>
+      <Projects />
+      <section className="container narrow">
+        <div className="container--narrow">
           <Text bold>Not available for projects. Always available for ☕</Text>
         </div>
       </section>
@@ -273,7 +277,7 @@ export default () =>
           background-color: #2a2b38;
           content: '';
           opacity: 1;
-          transition: .25s;
+          transition: 0.25s;
         }
 
         a:hover {
@@ -291,7 +295,6 @@ export default () =>
           max-width: 1200px;
           margin: 0 auto;
           padding: 40px;
-          min-height: calc(100vh - 170px);
           justify-content: center;
         }
 
@@ -300,4 +303,5 @@ export default () =>
         }
       `}
     </style>
-  </div>;
+  </div>
+);
