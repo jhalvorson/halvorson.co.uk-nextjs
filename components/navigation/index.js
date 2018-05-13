@@ -9,6 +9,11 @@ export default function Navigation() {
 
       <ul className="list">
         <li>
+          <a href="https://twitter.com/jamiehalvorson" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li>
           <a href="https://medium.com/@jamiehalvorson" target="_blank">
             Writing
           </a>

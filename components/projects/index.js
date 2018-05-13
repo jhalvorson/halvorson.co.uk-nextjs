@@ -19,7 +19,7 @@ export default function Projects() {
         {`
           .wrapper {
             background-color: #f9f9f9;
-            margin-bottom: 40px;
+            margin-bottom: 0px;
           }
 
           h2 {

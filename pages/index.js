@@ -5,15 +5,15 @@ import Text from '../components/text';
 import Navigation from '../components/navigation';
 import Projects from '../components/projects';
 import Head from '../components/head';
+import Repos from '../components/repos';
 
 export default class Index extends Component {
   static async getInitialProps() {
-    const res = await fetch('https://api.github.com/jhalvorson/repos');
+    const res = await fetch('https://api.github.com/users/jhalvorson/repos?sort="updated"');
     const json = await res.json();
     return { repos: json }
   }
   render() {
-    console.log(this.props.repos);
     return (
       <div>
         <Head />
@@ -46,12 +46,12 @@ export default class Index extends Component {
                   </a>, amongst others.
                 </Text>
               <Text>
-                Currently spending all of my available time designing &amp; building <a href="https://fab.fitness" target="_blank">FabFit</a> and
-                other JS, React, React Native and Node applications.
+                Spending all of my available time designing &amp; building <a href="https://fab.fitness" target="_blank">FabFit</a>, messing around with open-source projects and sending boring tweets.
                 </Text>
             </div>
           </section>
           <Projects />
+          <Repos repos={this.props.repos} />
           <section className="container narrow">
             <div className="container--narrow">
               <Text bold>Not available for projects. Always available for ☕</Text>
