@@ -9,7 +9,7 @@ import Repos from '../components/repos';
 
 export default class Index extends Component {
   static async getInitialProps() {
-    const res = await fetch('https://api.github.com/users/jhalvorson/repos?sort="updated"');
+    const res = await fetch('https://api.github.com/users/jhalvorson/repos?sort="updated"&type="all"');
     const json = await res.json();
     return { repos: json }
   }
