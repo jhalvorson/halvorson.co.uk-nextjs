@@ -13,6 +13,11 @@ export default function Projects() {
               Coffee House - iOS App
             </a>
           </div>
+          <div className="project">
+            <a href="https://fab.fitness" target="_blank">
+              FabFit - Web App
+            </a>
+          </div>
         </div>
       </div>
       <style jsx>

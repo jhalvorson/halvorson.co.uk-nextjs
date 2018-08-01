@@ -22,17 +22,17 @@ export default class Index extends Component {
           <section className="container narrow">
             <div className="container--narrow">
               <HomeTitle>
-                Senior Software Engineer at Signal, focused on React, React Native &amp;
-                JS. Trying to build FabFit.
+                Frontend Engineer at Amiqus, focused on React, React Native, Vue, GraphQL &amp;
+                JS. Building FabFit.
               </HomeTitle>
               <Text>
                 Currently based in Edinburgh Scotland, working
                   at{' '}
-                <a href="https://cellosignal.com" target="_blank">
-                  Signal
-                  </a>. Previously worked with clients such as{' '}
+                <a href="https://amiqus.co" target="_blank">
+                  Amiqus
+                  </a>. Was previously a Senior Software Engineer at <a href="https://cellosignal.com" target="_blank">Signal</a>. Worked with clients such as{' '}
                 <a href="https://autograph-hotels.marriott.com" target="_blank">
-                  Autograph hotels
+                  Marriott Autograph hotels
                   </a>,{' '}
                 <a
                   href="https://itunes.apple.com/us/app/the-royal-edinburgh-military-tattoo/id1250371654?mt=8"
@@ -54,7 +54,7 @@ export default class Index extends Component {
           <Repos repos={this.props.repos} />
           <section className="container narrow">
             <div className="container--narrow">
-              <Text bold>Not available for projects. Always available for ☕</Text>
+              <Text bold><a href="mailto:jamie@halvorson.co.uk" className="no-strike">Got an interesting weekend project? Hit me up jamie@halvorson.co.uk</a></Text>
             </div>
           </section>
         </main>
@@ -194,7 +194,7 @@ export default class Index extends Component {
                 white-space: nowrap;
               }
 
-              a:before {
+              a:not(.no-strike):before {
                 position: absolute;
                 top: 9px;
                 left: 0;
