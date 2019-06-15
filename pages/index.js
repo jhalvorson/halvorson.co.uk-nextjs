@@ -8,11 +8,6 @@ import Head from '../components/head';
 import Repos from '../components/repos';
 
 export default class Index extends Component {
-  static async getInitialProps() {
-    const res = await fetch('https://api.github.com/users/jhalvorson/repos?sort="updated"&type="all"');
-    const json = await res.json();
-    return { repos: json }
-  }
   render() {
     return (
       <div>
@@ -22,15 +17,16 @@ export default class Index extends Component {
           <section className="container narrow">
             <div className="container--narrow">
               <HomeTitle>
-                Frontend Engineer at Amiqus, focused on React, React Native, Vue, GraphQL &amp;
-                JS. Building FabFit.
+                Senior Frontend Engineer at FairFX, focused on React, React Native & GraphQL. Building FabFit on the side.
               </HomeTitle>
               <Text>
-                Currently based in Edinburgh Scotland, working
+                Based in London, working
                   at{' '}
-                <a href="https://amiqus.co" target="_blank">
-                  Amiqus
-                  </a>. Was previously a Senior Software Engineer at <a href="https://cellosignal.com" target="_blank">Signal</a>. Worked with clients such as{' '}
+                <a href="https://fairfx.com" target="_blank" rel="noopener nofollow">
+                  FairFX
+                  </a>.
+                <br/><br />
+                I've previously worked at Amiqus and Cello Signal. Worked with clients such as{' '}
                 <a href="https://autograph-hotels.marriott.com" target="_blank">
                   Marriott Autograph hotels
                   </a>,{' '}
@@ -46,12 +42,10 @@ export default class Index extends Component {
                   </a>, amongst others.
                 </Text>
               <Text>
-                Spending all of my available time designing &amp; building <a href="https://fab.fitness" target="_blank">FabFit</a>, messing around with open-source projects and sending boring tweets.
+                Spending all of my free time designing, building &amp; producing content for <a href="https://fab.fitness" target="_blank">FabFit</a>.
                 </Text>
             </div>
           </section>
-          <Projects />
-          <Repos repos={this.props.repos} />
           <section className="container narrow">
             <div className="container--narrow">
               <Text bold><a href="mailto:jamie@halvorson.co.uk" className="no-strike">Got an interesting weekend project? Hit me up jamie@halvorson.co.uk</a></Text>
@@ -191,15 +185,14 @@ export default class Index extends Component {
                 color: #2a2b38;
                 text-decoration: none;
                 position: relative;
-                white-space: nowrap;
               }
 
               a:not(.no-strike):before {
                 position: absolute;
-                top: 9px;
+                bottom: -3px;
                 left: 0;
                 right: 0;
-                height: 3px;
+                height: 2px;
                 background-color: #2a2b38;
                 content: '';
                 opacity: 1;

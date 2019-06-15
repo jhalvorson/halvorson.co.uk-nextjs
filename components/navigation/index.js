@@ -18,9 +18,14 @@ export default function Navigation() {
             Writing
           </a>
         </li>
-        <li className="last">
+        <li>
           <a href="https://github.com/jhalvorson" target="_blank">
             GitHub
+          </a>
+        </li>
+        <li className="last">
+          <a href="https://dev.to/jhalvorson" target="_blank">
+            Dev.to
           </a>
         </li>
       </ul>
